@@ -7,11 +7,13 @@ public:
   string protocol;
   string ip;
   int port;
+  string username;
+  string password;
 
-  Proxy(std::string proxy);
+  Proxy(string proxy);
   ~Proxy();
 
-  void changeProxy(std::string proxy);
+  void changeProxy(string proxy);
   bool isWorking();
 
   string toString();
